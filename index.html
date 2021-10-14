@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles-physical.css">
+    <link rel="stylesheet" href="./css/styles - logical.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap" rel="stylesheet">   
     <title>El Blog de Francisco</title>
+<meta property="og:title" content="The Rock" />
+<meta property="og:type" content="video.movie" />
+<meta property="og:url" content="https://www.imdb.com/title/tt0117500/" />
+<meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg" />
 
 </head>
 <body>
@@ -70,9 +76,10 @@
     <main class= "main">
         <div class="wrapper">
             <div class="content">
-                <h1>
+                <h1 id="guillermo">
                     Cursos esenciales de HTML y CSS 
                 </h1>
+                
                 <p>
                     Este es el inicio de tu carrera como Desarrollador Web, 
                     empezarás aprendiendo HTML y CSS para la creación de contenidos, 
@@ -196,7 +203,37 @@
                     <h3>Modelo de Caja</h3>
                     <img src="/images/Rectangle 56.png" alt="">
                 </section>
-                <a href="mailto:pacok12@hotmail.com"target="_blanck">pagina web de leo</a>
+                
+                
+                <div class="section-content">
+                    <h2>Hola estos soon algunos videos</h2>
+                    <div class="slider">
+                        <scroll-container class="slider-container">
+                            <scroll-page class="slider-slide" id="video-1">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/HR19QqnDx_E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                            </scroll-page>
+                            <scroll-page class="slider-slide" id="video-2">
+                                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/ASzOzrB-a9E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+                             </scroll-page>
+                        </scroll-container>
+                        <div class="slider-bullet-list">
+                            <a href="#video-1" class="slider-bullet"></a>
+                            <a href="#video-2"class="slider-bullet"></a>
+                        </div>
+                    </div>
+                </div>
+                <p>
+                    su tienes alguna pregunta escribe a 
+                    <a href="mailto:pacok12@hotmail.com"target="_blanck">pagina web de leo</a>
+                </p>
+                <div class="section-content" >
+                    <form action="#" class="form">
+                        <h2>Ingresa a nuestro newletter</h2>
+                        <input type="text" required placeholder="Nombre">
+                        <input type="text" required placeholder="Correo Electronico">
+                        <input type="submit"value="Suscribirme">
+                    </form>
+                </div>
             </div>
         </div>
 
